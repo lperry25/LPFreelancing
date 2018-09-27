@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ap.cx/react-fullpage": "0.0.12",
+    "@fullpage/react-fullpage": "^0.1.0",
     "next": "^7.0.0",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2",
+    "react-page-scroller": "^1.4.0",
+    "webfontloader": "^1.6.28"
   }
 }
