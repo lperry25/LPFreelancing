@@ -14,6 +14,7 @@
   "dependencies": {
     "@ap.cx/react-fullpage": "0.0.12",
     "@fullpage/react-fullpage": "^0.1.0",
+    "babel-polyfill": "^6.26.0",
     "next": "^7.0.0",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",

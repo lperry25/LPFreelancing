@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { Component } from 'react'
+
+import ReactPageScroller from "react-page-scroller";
+
+/*
+goToPage = (pageNumber) => {
+    this.reactPageScroller.goToPage(pageNumber);
+}
+
+export default class App extends Component {
+    render() {
+        return (
+            <ReactPageScroller ref={c => this.reactPageScroller = c}>
+                <h1>Hello</h1>
+            </ReactPageScroller>
+        )
+    }
+}
+*/
 
 import Fullpage, { FullpageSection } from '@ap.cx/react-fullpage'
 
+import  Header from '../components/Header.js'
 import Layout from '../components/MyLayout.js'
 
 /*import WebFont from 'webfontloader';
@@ -17,7 +36,7 @@ import Link from 'next/link'
 
 const textBlock = {
     position: 'absolute',
-    top: '30%',
+    top: '0',
     fontSize: '-webkit-xxx-large',
     textAlign: 'center',
     width: '100%',
@@ -26,29 +45,38 @@ const textBlock = {
     paddingRight: '20px',
     fontFamily: 'sans-serif'
 }
-/*
+
+
 export default class App extends Component {
     render () {
         return (
-            <Fullpage>
-                <FullpageSection style={{
-                    backgroundColor: 'lime',
-                    height: '80vh',
-                    padding: '1em',
-                }}>1</FullpageSection>
-                <FullpageSection style={{
-                    backgroundColor: 'coral',
-                    padding: '1em',
-                }}>2</FullpageSection>
-                <FullpageSection style={{
-                    backgroundColor: 'firebrick',
-                    padding: '1em',
-                }}>3</FullpageSection>
-            </Fullpage>
+            <div>
+                <Header/>
+                <Fullpage>
+                    <FullpageSection style={{
+                        padding: '1em'
+                    }}>
+                        <img src="/static/banner2.jpg" alt="Banner Image" width="100%"/>
+                        <div style={textBlock}>
+                            <h1>LP Freelancing</h1>
+                            <p>Software development to meet your needs</p>
+                        </div>
+                    </FullpageSection>
+                    <FullpageSection style={{
+                        backgroundColor: 'coral',
+                        padding: '1em',
+                    }}>2</FullpageSection>
+                    <FullpageSection style={{
+                        backgroundColor: 'firebrick',
+                        padding: '1em',
+                    }}>3</FullpageSection>
+                </Fullpage>
+            </div>
         )
     }
 }
-*/
+
+/*
 export default () => (
     <Layout>
         <div>
@@ -60,30 +88,6 @@ export default () => (
         </div>
     </Layout>
 )
-
-/*
-import ReactDOM from 'react-dom';
-import 'fullpage.js/vendors/scrolloverflow' // Optional. When using scrollOverflow:true
-import ReactFullpage from '@fullpage/react-fullpage';
-
-
-const FullpageWrapper = () => (
-    <ReactFullpage
-        render={({ state, fullpageApi }) => {
-            return (
-                <div>
-                    <div className="section">
-                        <p>Section 1 (welcome to fullpage.js)</p>
-                        <button onClick={() => fullpageApi.moveSectionDown()}>Click me to move down</button>
-                    </div>
-                    <div className="section">
-                        <p>Section 2</p>
-                    </div>
-                </div>
-            );
-        }}
-    />
-);
-
-ReactDOM.render(<FullpageWrapper />, document.getElementById('react-root'));
 */
+
+
